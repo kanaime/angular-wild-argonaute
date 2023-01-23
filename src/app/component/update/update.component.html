@@ -1,0 +1,12 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)"  class="new-member-form d-flex flex-column justify-content-center w-50">
+  <label for="name" class=" w-50 m-auto">Rename</label>
+  <br>
+  <input type="text"  id="name" ngModel name="name"  class="w-50 m-auto" placeholder="{{user.name}}" />
+  <br>
+  <div class="d-flex m-auto w-50">
+    <button type="submit" class="btn btn-success " [disabled]="!form.valid">Envoyer</button>
+    <div class="w-25"></div>
+    <a [routerLink]="['/']" class="btn btn-danger">Retour</a>
+  </div>
+
+</form>

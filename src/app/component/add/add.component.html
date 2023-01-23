@@ -1,0 +1,17 @@
+
+
+
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" class="new-member-form d-flex flex-column justify-content-center w-50">
+  <label for="name">Nom de l&apos;Argonaute</label>
+  <br>
+  <input type="text"  id="name" ngModel name="name" #name="ngModel" class="w-50 m-auto" placeholder="Charalampos" required minlength="4" appForbiddenName="nono"/>
+  <div *ngIf="name.errors?.['minlength']" class="err">
+    le nom doit faire au moins 4 caractères.
+  </div>
+  <div *ngIf="name.errors?.['forbiddenName']">
+    Name cannot be Bob.
+  </div>
+  <br>
+  <button type="submit" class="w-25 m-auto" [disabled]="!form.valid">Envoyer</button>
+</form>

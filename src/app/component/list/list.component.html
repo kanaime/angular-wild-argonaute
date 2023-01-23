@@ -1,0 +1,12 @@
+<section  class="member-list">
+<div *ngFor="let user of users" class="d-flex ">
+  <div class="member-item ">{{user.name}}</div>
+  <div class="displayNone btn-supr">
+    <button type="checkbox" (click)="deleteThisUser(user.id)" class="w-10 ">X</button>
+    <a [routerLink]="['/update',user.id]" class="btn-modif">O</a>
+
+  </div>
+
+</div>
+
+</section>

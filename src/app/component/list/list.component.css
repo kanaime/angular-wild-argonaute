@@ -1,0 +1,26 @@
+.member-item {
+  padding: 5px;
+  width: 100px;
+}
+.member-list{
+  max-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+.w-10{
+ border: none;
+ margin:  5px;
+border-radius: 20%;
+}
+.btn-modif{
+border: none;
+margin:  5px;
+padding: 3px 5px;
+border-radius: 20%;
+text-decoration: none;
+color: black;
+background-color: rgb(230, 228, 228)  ;
+}
+

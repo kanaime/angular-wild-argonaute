@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularfirebase-52e7a": {
+      "hosting": {
+        "angular-wild-argonaute": [
+          "angularfirebase-52e7a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularfirebase-52e7a"
+  }
+}

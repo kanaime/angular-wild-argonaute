@@ -1,0 +1,86 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+.headerDiv{
+  background-color: #f4f4f4;
+  padding: 5px;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+
+
+h1, h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+}
+
+.dark{
+  background-color: black;
+}
+
+.checkbox{
+  position: relative;
+  width: 10px;
+  position: absolute;
+  height: 5px;
+  border-radius: 50px;
+  border: 1px solid green;
+  background-color: yellow;
+  cursor: pointer;
+}
+.boule{
+  transform: translate(0%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.bouleMove{
+  left: calc(100% - 3px)!important;
+
+}
+
